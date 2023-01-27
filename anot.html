@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.google.com/specimen/VT323" rel="stylesheet" />
+    <link rel="stylesheet" href="styleAnot.css" />
+    <title>Caderno de anotações</title>
+  </head>
+
+  <body>
+    <section>
+      <div>
+        <p id="p1">Digite sua anotaçao</p>
+        <input type="text" name="anot" id="anot" />
+        <input
+          type="button"
+          class="efeito efeito1"
+          id="send"
+          value="adicionar"
+        />
+        <br /><br /><select name="flista" id="flista" size="20"></select>
+        <br /><input
+          class="efeito efeito1"
+          type="button"
+          id="imp"
+          value="finalizar"
+          onclick="gerarPDF()"
+        />
+      </div>
+      <div id="res"></div>
+    </section>
+
+    <script src="scriptAnot.js"></script>
+  </body>
+</html>
